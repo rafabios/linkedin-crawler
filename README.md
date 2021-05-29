@@ -24,10 +24,11 @@ docker build -t linkedin-crawler:latest .
 
 5. Withing Docker - Run it
 ```
-docker run -it -e EMAIL='x@x.com'\
-	PASSWORD='XXXXX'\
-	HEADLESS='1' \
-	PROFILE='XXXXX'\
+docker run -it \
+	-e EMAIL='x@x.com'\
+	-e PASSWORD='XXXXX'\
+	-e HEADLESS='1' \
+	-e PROFILE='XXXXX'\
 	linkedin-crawler:latest 
 ``` 
 
